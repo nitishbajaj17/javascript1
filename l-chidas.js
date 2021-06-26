@@ -11,12 +11,3 @@ $(function() {
     $(".copied").text("Copied..:)").css({"background-color": "tomato", "fontSize": "16px"}) .show().fadeOut(2000);
     });
 });
-
-
-
-
-
-
-$("#slider").on("input",function () {
-   $('input').css("font-size", $(this).val() + "px");
-});
