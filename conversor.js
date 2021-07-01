@@ -14,10 +14,4 @@ var _0x65e5=["\x6D\x61\x78\x48\x65\x69\x67\x68\x74","\x6F\x70\x74\x69\x6F\x6E\x7
         $(".copied").text("Copied..:)").css({"background-color": "tomato", "fontSize": "16px"}) .show().fadeOut(2000);
         });
     });
-   </script>
 
-   <script>
-        /*font-slider*/
-$("#slider").on("input",function () {
-       $('input').css("font-size", $(this).val() + "px");
-});
