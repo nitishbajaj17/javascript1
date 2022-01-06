@@ -1,3 +1,4 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     $('.sym span').click(function(e) {
   var txtarea = $('#cartlist').val();
@@ -6,10 +7,6 @@
 });
 
 
-
-
-
-    // textareabox copy button
           function myFunction1() {
             var copyText = document.getElementById ("cartlist");
              copyText.select();
