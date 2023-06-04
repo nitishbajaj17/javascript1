@@ -1,10 +1,17 @@
-    function generateName() {
-        var nameInput = document.getElementById("nameInput");
-        var name = nameInput.value;
-        var spacedName = addSpace(name);
-        var output = document.getElementById("output");
-        output.textContent = "Name with spaces: " + spacedName;
+function generateName() {
+    var nameInput = document.getElementById("nameInput");
+    var name = nameInput.value;
+    var spacedName = addSpace(name);
+    var output = document.getElementById("output");
+    output.textContent = "Name with spaces: " + spacedName;
+    
+    var copyButton = document.getElementById("copyButton");
+    if (name.length > 0) {
+        copyButton.style.display = "block";
+    } else {
+        copyButton.style.display = "none";
     }
+}
 
     function addSpace(name) {
         var spacedName = name.split('').join('　');
@@ -37,6 +44,3 @@ setTimeout(function() {
     messageBox.style.display = "none";
 }, 2000);
 }
-window.addEventListener("DOMContentLoaded", function() {
-        generateName();
-    });
